@@ -5,16 +5,33 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>GanaKata - Hiragana & Katakana Quiz</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
     <link rel="manifest" href="manifest.json">
     <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
 </head>
 <body>
     <main>
-        <h1>Kana Quiz</h1>
+        <h1>GanaKata - Kana Quiz</h1>
+
+        <section id="mode-selection">
+            <p id="label-choose-mode">Choisis un mode :</p>
+            <label><input type="radio" name="mode" value="hiragana" checked> Hiragana</label>
+            <label><input type="radio" name="mode" value="katakana"> Katakana</label>
+            <label><input type="radio" name="mode" value="both"> Les deux</label>
+            <label><input type="radio" name="mode" value="custom"> Personnalisé</label>
+
+            <p id="label-question-count">Combien de questions ?</p>
+            <select id="question-count">
+                <option value="all" selected>Toutes</option>
+            </select>
+
+            <div style="margin-top: 1rem;">
+                <button id="start">Commencer</button>
+            </div>
+        </section>
     </main>
     
+    <script src='js/app.js'></script>
 </body>
-</html>>
+</html>

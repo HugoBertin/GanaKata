@@ -1,6 +1,6 @@
 {
-  "name": "Kana Quiz",
-  "short_name": "KanaQuiz",
+  "name": "GanaKata - Kana Quiz",
+  "short_name": "GanaKata",
   "start_url": "index.html",
   "display": "standalone",
   "background_color": "#ffffff",
