@@ -21,12 +21,18 @@
 
         <section id="mode-selection">
             <p id="label-choose-mode">Choisis un mode :</p>
-            <select id="mode">
+            <div id="mode-toggle" class="select-button">
+                <button data-mode="standard" class="active">Standard</button>
+                <button data-mode="custom">Personnalisé</button>
+            </div>
+
+            <div id="standard-select-wrapper">
+            <select id="mode-select">
                 <option value="hiragana">Hiragana</option>
                 <option value="katakana">Katakana</option>
                 <option value="both">Les deux</option>
-                <option value="custom">Personnalisé</option>
             </select>
+            </div>
 
             <p id="label-question-count">Combien de questions ?</p>
             <select id="question-count">
