@@ -119,13 +119,14 @@ footer.mobile-footer nav {
   }
   footer.mobile-footer {
     display: block;
+    padding-bottom: 1rem;
   }
   .desktop-header {
     display: none;
   }
   header {
     justify-content: center;
-  }
+  } 
 }
 
 button {
