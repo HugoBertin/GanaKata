@@ -6,15 +6,30 @@ body {
     text-align: center;
 }
 
+.hidden {
+  display: none;
+}
+
 header {
     display: flex;
     align-items: center;
     gap: 1rem;
-    justify-content: center;
+    justify-content: space-between;
     margin-bottom: 1rem;
     background-color: #f0f0f0;
     padding: 0.5rem 1rem;
     border-bottom: 1px solid #ccc;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.desktop-header nav {
+    display: flex;
+    gap: 2rem;
 }
 
 header img {
@@ -26,25 +41,91 @@ header h1 {
     font-size: 2rem;
 }
 
-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #f0f0f0;
-    padding: 0.5rem;
-    border-top: 1px solid #ccc;
-    font-size: 0.9rem;
-}
+
 .footer-content {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
 }
-.footer-content img {
-    height: 24px;
-    width: 24px;
+
+/* FOOTER */
+footer.desktop-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f0f0f0;
+  padding: 0.5rem;
+  border-top: 1px solid #ccc;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+footer.desktop-footer img {
+  height: 24px;
+  width: 24px;
+}
+
+footer.mobile-footer {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #f0f0f0;
+  border-top: 1px solid #ccc;
+  z-index: 100;
+}
+
+footer.mobile-footer nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+}
+
+.nav-item {
+  color: #000000;
+  text-decoration: none;
+  font-size: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-item img {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 2px;
+  filter: grayscale(100%) brightness(150%);
+}
+
+.nav-item.active {
+  color: #1ea554;
+}
+
+.nav-item.active img {
+  filter: none;
+}
+
+/* Pour smaartphone et tablette */
+@media (max-width: 810px) {
+  footer.desktop-footer {
+    display: none;
+  }
+  footer.mobile-footer {
+    display: block;
+  }
+  .desktop-header {
+    display: none;
+  }
+  header {
+    justify-content: center;
+  }
 }
 
 button {
@@ -59,7 +140,7 @@ button {
 
 .select-button {
     display: flex;
-    background: #f1f3f5;
+    background: #d9d9d1b5;
     border-radius: 1rem;
     overflow: hidden;
     width: fit-content;
@@ -84,4 +165,24 @@ button {
     border-radius: 1rem;
     color: #1a202c;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  
+  background-color: #bfe2ff; 
+  color: rgb(0, 0, 0);
+  font-size: 1em;
+  font-weight: bold;
+  padding: 12px 40px 12px 16px;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+
+  background-image: url("/assets/icons/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 16px;
 }

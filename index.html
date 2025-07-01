@@ -13,25 +13,51 @@
 <body>
     <main>
         <header>
-            <img src="assets/icons/icon-192x192.png" alt="Logo Ganakata">
-            <h1>GanaKata</h1>
+            <div class="header-logo">
+                <img src="assets/icons/icon-192x192.png" alt="Logo Ganakata">
+                <h1>GanaKata</h1>
+            </div>
+            
+            <div class="desktop-header">
+                <nav>
+                <a href="#" class="nav-item active">
+                <img src="assets/icons/icons-home.svg" alt="Home">
+                <span>Accueil</span>
+                </a>
+                <a href="#" class="nav-item">
+                <img src="assets/icons/icons-book.svg" alt="Learn">
+                <span>Révision</span>
+                </a>
+                <a href="#" class="nav-item">
+                <img src="assets/icons/icons-info.svg" alt="Help">
+                <span>Aide</span>
+                </a>
+            </nav>
+            </div>
+            
         </header>
 
-        <h1>GanaKata - Kana Quiz</h1>
+        <h2>Quiz : Hiragana et Katakana</h2>
 
         <section id="mode-selection">
-            <p id="label-choose-mode">Choisis un mode :</p>
+            
             <div id="mode-toggle" class="select-button">
                 <button data-mode="standard" class="active">Standard</button>
                 <button data-mode="custom">Personnalisé</button>
             </div>
 
+            
             <div id="standard-select-wrapper">
-            <select id="mode-select">
-                <option value="hiragana">Hiragana</option>
-                <option value="katakana">Katakana</option>
-                <option value="both">Les deux</option>
-            </select>
+                <p id="label-choose-mode">Choisis un mode :</p>
+                <select id="mode-select">
+                    <option value="hiragana">Hiragana</option>
+                    <option value="katakana">Katakana</option>
+                    <option value="both">Les deux</option>
+                </select>
+            </div>
+
+            <div id="custom-selection" class="hidden">
+                <p id="label-choose-characters">Choisis les caractères :</p>
             </div>
 
             <p id="label-question-count">Combien de questions ?</p>
@@ -45,7 +71,8 @@
         </section>
     </main>
 
-    <footer>
+
+    <footer class="desktop-footer">
         <div class="footer-content">
             <p>&copy; 2025 KanaQuiz. Conçu par</p>
             <a href="http://hugobertin.github.io" target="_blank">
@@ -53,6 +80,24 @@
             </a>
         </div>
     </footer>
+
+    <footer class="mobile-footer">
+        <nav>
+            <a href="#" class="nav-item active">
+            <img src="assets/icons/icons-home.svg" alt="Home">
+            <span>Accueil</span>
+            </a>
+            <a href="#" class="nav-item">
+            <img src="assets/icons/icons-book.svg" alt="Learn">
+            <span>Révision</span>
+            </a>
+            <a href="#" class="nav-item">
+            <img src="assets/icons/icons-info.svg" alt="Help">
+            <span>Aide</span>
+            </a>
+        </nav>
+    </footer>
+
     
     <script src='js/app.js'></script>
 </body>
