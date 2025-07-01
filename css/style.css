@@ -181,7 +181,7 @@ select {
   border-radius: 1rem;
   cursor: pointer;
 
-  background-image: url("/assets/icons/arrow-down.svg");
+  background-image: url("https://hugobertin.github.io/GanaKata/assets/icons/arrow-down.svg");
   background-repeat: no-repeat;
   background-position: right 10px center;
   background-size: 16px;
