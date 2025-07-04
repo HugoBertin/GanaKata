@@ -106,10 +106,11 @@ footer.mobile-footer nav {
 
 .nav-item.active {
   color: #1ea554;
+  font-weight: bold;
 }
 
 .nav-item.active img {
-  filter: none;
+  filter: brightness(0) saturate(100%) invert(51%) sepia(60%) saturate(5120%) hue-rotate(120deg) brightness(98%) contrast(76%);;
 }
 
 /* Pour smaartphone et tablette */
@@ -137,6 +138,7 @@ button {
     cursor: pointer;
     background-color: #04AA6D;
     color: #ffffff;
+    font-weight: bold;
 }
 
 .select-button {
